@@ -33,7 +33,11 @@ CDN
 
 <img src="https://github.com/user-attachments/assets/e188748a-0ddb-4625-93ed-0ba496bdeabb" />
 
+엣지 로케이션
+cdn서비스의 핵심기능으로 캐싱 서버 역할을 합니다. 리전과 별개로 엣지 로케이션이 적용되어 있기 때문에 먼 나라나 지역에서 지연없이 콘텐츠를 전송받을 수 있습니다.
+-> 엣지 로케이션은 CDN서비스와 클라이언트가 만나는 지점이라고 볼 수 있습니다. 엣지 로케이션에 캐싱된 데이터가 없다면 CDN으로부터 요청을 할 것 입니다!
 
+![image](https://github.com/user-attachments/assets/e80015f8-b6c5-402f-aa4b-446f58080743)
 
 
 
