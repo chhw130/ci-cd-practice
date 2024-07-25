@@ -1,21 +1,31 @@
-## 주요 링크
+# 주요 링크
 
 - S3 버킷 웹사이트 엔드포인트: test-cicd-action.s3-website-us-east-1.amazonaws.com
 - CloudFrount 배포 도메인 이름: d22aod4f4pt6sq.cloudfront.net
 - Route5s를 통해 연동된 도메인 이름 : https://www.mintchoco.store/
 
-## 주요 개념
+# 주요 개념
 
-### GitHub Actions과 CI/CD 도구
+## GitHub Actions과 CI/CD 도구
 
-#### Github Actions
+### Github Actions
 Github에서 제공하는 통합 CI/CD 서비스입니다. 레포지토리에 있는 코드를 워크플로우를 설정하여 빌드, 테스트, 린트 그리고 다양한 옵션 등을 설정할 수 있습니다.
 `.github/workflows`디렉토리에 yaml파일로 정의됩니다.
 
-#### S3와 스토리지
+### S3와 스토리지
 
-#### CloudFront와 CDN
+<img src="https://github.com/user-attachments/assets/99b8dbb8-3ad5-4039-a026-7cae8c6850d3" height='200' width='200'/>
 
-#### 캐시 무효화(Cache Invalidation)
+Amazon Simple Storage Service (Amazon S3)는 Amazon Web Services (AWS)가 제공하는 확장성, 보안, 성능을 갖춘 객체 스토리지 서비스입니다. S3는 사용자들이 대규모 데이터를 저장, 보호, 검색할 수 있도록 지원하며, 다양한 사용 사례에 적합합니다.
 
-#### Repository secret과 환경변수
+객체 스토리지: S3는 객체 스토리지 서비스로, 데이터를 "객체"라는 단위로 저장합니다. 각 객체는 데이터(실제 데이터)와 메타데이터(파일의 정보를 담을 데이터)로 구성되며, 고유한 키로 식별됩니다.
+
+버킷: 객체를 저장하는 컨테이너 역할을 하는 논리적 단위입니다. 각 버킷은 고유한 이름을 가지며, 버킷 안에 여러 객체를 저장할 수 있습니다.
+
+
+### CloudFront와 CDN
+
+
+### 캐시 무효화(Cache Invalidation)
+
+### Repository secret과 환경변수
