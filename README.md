@@ -1,3 +1,8 @@
+# CI/CD 파이프라인 다이어그램
+
+![cicd-pipeline drawio](https://github.com/user-attachments/assets/82e0cf6e-aaba-4a95-a67d-b0c9c089a361)
+
+
 # 주요 링크
 
 - S3 버킷 웹사이트 엔드포인트: test-cicd-action.s3-website-us-east-1.amazonaws.com
@@ -47,6 +52,10 @@ Cloudfront에서는 기본적으로 캐싱데이터가 TTL이 24시간입니다.
 위에서 알아봤듯이 캐싱된 데이터는 기본적으로 엣지 로케이션에 있으며, 요청이 들어오면 캐싱 데이터를 클라이언트에게 응답해줍니다.
 그렇기 때문에 캐시데이터를 제거하는 작업이 필요합니다.
 
+캐시 무효화 과정
+1. 먼저 S3에 파일들이 동기화됩니다. (aws s3 sync 명령 사용).
+2. S3 동기화가 완료되면, 즉시 다음 단계로 넘어가 CloudFront 캐시 무효화 명령이 실행됩니다.
+3. 실제 캐시 무효화 후 갱신까지 시간이 소요될 수 있습니다.
 
 
 ## Repository secret과 환경변수
